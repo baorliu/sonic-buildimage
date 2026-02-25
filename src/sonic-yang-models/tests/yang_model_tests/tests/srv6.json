@@ -21,7 +21,6 @@
     },
     "SRV6_MY_SID_INVALID_ACTION": {
         "desc": "A SID configured with invalid action",
-        "eStrKey" : "misc",
         "eStr": ["interface is mandatory when action is 'uA'"]
     },
     "SRV6_MY_SID_UA_VALID": {
@@ -29,7 +28,6 @@
     },
     "SRV6_MY_SID_UA_MISSING_INTERFACE": {
         "desc": "A SID configured with action uA but missing interface",
-        "eStrKey" : "misc",
         "eStr": ["interface is mandatory when action is 'uA'"]
     },
     "SRV6_MY_SID_UA_MISSING_ADJ": {
@@ -37,7 +35,6 @@
     },
     "SRV6_MY_SID_UA_MISSING_BOTH": {
         "desc": "A SID configured with action uA but missing both interface and adj",
-        "eStrKey" : "misc",
         "eStr": ["interface is mandatory when action is 'uA'"]
     }
 }
