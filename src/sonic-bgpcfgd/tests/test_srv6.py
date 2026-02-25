@@ -158,7 +158,12 @@ def test_uA_add_del():
     op_test(sid_mgr, 'SET', ("loc1|FCBB:BBBB:1:FE01::/64", {
         'action': 'uA',
         'interface': 'Ethernet0'
-    }), expected_ret=False, expected_cmds=[])
+    }), expected_ret=True, expected_cmds=[
+        'segment-routing',
+        'srv6',
+        'static-sids',
+        'sid fcbb:bbbb:1:fe01::/64 locator loc1 behavior uA interface Ethernet0'
+    ])
 
     print(loc_mgr.directory.data)
     assert sid_mgr.directory.path_exist(sid_mgr.db_name, sid_mgr.table_name, "loc1|fcbb:bbbb:1:fe01::\\64")
